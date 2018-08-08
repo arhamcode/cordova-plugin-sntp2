@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="cordova-plugin-sntp"
+    id="cordova-plugin-sntp2"
     version="0.0.2">
 
   <name>SNTPTime</name>
@@ -12,7 +12,7 @@
 
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
-      <feature name="cordova-plugin-sntp">
+      <feature name="cordova-plugin-sntp2">
         <param name="android-package" value="bosowa.hris.cordova.CDVPluginSntp" />
       </feature>
     </config-file>
@@ -23,7 +23,7 @@
 
   <platform name="ios">
     <config-file parent="/*" target="config.xml">
-      <feature name="cordova-plugin-sntp">
+      <feature name="cordova-plugin-sntp2">
         <param name="ios-package" value="cordova-plugin-sntp" />
       </feature>
     </config-file>

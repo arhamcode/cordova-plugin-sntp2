@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-sntp",
+  "name": "cordova-plugin-sntp2",
   "version": "0.0.2",
   "description": "Cordova SNTP Plugin",
   "cordova": {
-    "id": "cordova-plugin-sntp",
+    "id": "cordova-plugin-sntp2",
     "platforms": [
       "android",
       "ios"
