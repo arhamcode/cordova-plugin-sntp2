@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hub9co/cordova-plugin-sntp"
+    "url": "https://gitlab.com/arham.anwar/cordova-plugin-sntp2"
   },
   "keywords": [
     "cordova",
