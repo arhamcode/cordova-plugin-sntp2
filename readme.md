@@ -1,48 +1,48 @@
 # cordova-plugin-sntp2
 
-Based on https://github.com/hub9/cordova-plugin-sntp. Latest support Cordova 8.x.
+Forking dari project https://github.com/hub9/cordova-plugin-sntp. Hanya mendukung Cordova 8.X dan Android ^7.0.0.
 
-Simple plugin to connect into SNTP servers and get accurate time.
+Plugin ini menghubungkan perangkat ke server NTP untuk mengambil waktu yang lebih akurat. 
 
-Currently it is implemented for Android and has a dummy implementation for iOS. Since iOS keeps the device synced with NTP servers, it's not a common problem to have system clock unsynchronized, but Android only seems to do this on boot.
+Baru di implementasi untuk platform Android, sedangkan iOS implementasi bersifat dummy.
+Karena di iOS perangkat akan selalu tersinkronisasi dengan server NTP, jam yang tidak tersinkronisasi ini bukan menjadi masalah umum.
+Berbeda dengan Android yang hanya melakukan sinkronisasi saat boot.
 
-### Installation
-
+### Instalasi
 ```bash
 $ cordova plugin cordova-plugin-sntp2
 ```
 
-### Usage
-
+### Penggunaan
 Initialization
 ```javascript
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    // Set the SNTP server and timeout
-    sntp2.setServer("a.st1.ntp.br", 10000);
+    // Mengatur SNTP dan timeout
+    sntp2.setServer("0.id.pool.ntp.org", 10000);
 }
 ```
 
-Get time since epoch in milliseconds:
+Mengambil waktu (epoch) dalam milisecond:
 ```javascript
 sntp2.getTime(
     function(time) {
-        console.log("The actual amount of milliseconds since epoch is:", time);
+        console.log("Waktu (epoch) dalam milisecond :", time['time']);
     },
     function(errorMessage) {
-        console.log("I have error:", errorMessage);
+        console.log("Terjadi error:", errorMessage);
     }
 );
 ```
 
-Get system clock offset:
+Mengambil offset dari waktu yang dimiliki perangkat dan waktu dari SNTP:
 ```javascript
 sntp2.getClockOffset(
     function(offset) {
-        console.log("System clock offset is:", offset);
+        console.log("Offset :", offset['offset']);
     },
     function(errorMessage) {
-        console.log("I have error:", errorMessage);
+        console.log("Terjadi error:", errorMessage);
     }
 );
 ```
