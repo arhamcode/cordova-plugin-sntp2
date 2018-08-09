@@ -1,5 +1,7 @@
 # cordova-plugin-sntp2
 
+Based on https://github.com/hub9/cordova-plugin-sntp. Latest support Cordova 8.x.
+
 Simple plugin to connect into SNTP servers and get accurate time.
 
 Currently it is implemented for Android and has a dummy implementation for iOS. Since iOS keeps the device synced with NTP servers, it's not a common problem to have system clock unsynchronized, but Android only seems to do this on boot.
@@ -7,7 +9,7 @@ Currently it is implemented for Android and has a dummy implementation for iOS. 
 ### Installation
 
 ```bash
-$ cordova plugin add https://gitlab.com/arham.anwar/cordova-plugin-sntp2
+$ cordova plugin cordova-plugin-sntp2
 ```
 
 ### Usage
