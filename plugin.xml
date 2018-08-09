@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-sntp2"
-    version="2.0.0">
+    version="2.0.2">
 
   <name>SNTPTime</name>
   <description>Cordova Plugin to connect to SNTP servers and calculate device clock offset.</description>
 
-  <js-module name="sntp" src="www/cordova-plugin-sntp.js">
+  <js-module name="sntp" src="www/cordova-plugin-sntp2.js">
     <clobbers target="sntp2" />
   </js-module>
 
