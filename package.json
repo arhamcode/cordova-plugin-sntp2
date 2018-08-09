@@ -14,18 +14,19 @@
     "url": "https://gitlab.com/arham.anwar/cordova-plugin-sntp2"
   },
   "keywords": [
-    "cordova",
-    "sntp",
     "ecosystem:cordova",
     "cordova-android",
-    "cordova-ios"
+    "cordova-ios",
+    "cordova",
+    "sntp"
   ],
   "author": "Arham Anwar",
   "license": "Apache-2.0",
   "engines": {
     "cordovaDependencies": {
-      "3.0.0": {
-        "cordova": ">100"
+      "2.0.0": {
+        "cordova-android": ">7.0.0",
+        "cordova-ios": ">4.5.0"
       }
     }
   }
